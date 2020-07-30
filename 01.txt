@@ -1,0 +1,69 @@
+While traveling, you meet an IT professional who writes plays in their spare time. They are working on a play that really resonates with you. Part of the concept of the play is that it is open source. After a spirited discussion on your flight, they tell you about the repository where the play is kept and encourage you to get involved. To contribute, you will first need to install Git and configure it with your name and email address. Once that is done, you need to pull down the repository into /home/<user-name>/play/ on the provided workstation host. Create a new branch named after your first name to begin your piece of the story. Create a new text file with your story and add it to the branch. Also, add your name to the contributers.txt file within your branch. Be sure to track your work with git and commit your changes to your local repository and use the commit message "airplane story" so your travel buddy will remember who you are!
+
+Summary tasks list:
+
+1.Install and configure git on the provided workstation.
+2.Clone the repository from https://github.com/satyensingh/content-git-quickstart.git to /home/<user-name>/play and create a new branch for your story.
+3.Add a new story file to your local repository in your new branch.
+4.Add an entry to the file contributers.txt in your new branch.
+5.Commit your changes using the message "airplane story".
+
+
+Ans : 
+1. Git Installed
+
+2. Cloned 
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop
+$ cd Assign
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign
+$ git clone https://github.com/satyensingh/content-git-quickstart.git
+Cloning into 'content-git-quickstart'...
+remote: Enumerating objects: 23, done.
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23
+Unpacking objects: 100% (23/23), 2.00 KiB | 7.00 KiB/s, done.
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign
+$ ls
+content-git-quickstart/
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign
+$ pwd
+/c/Users/ravisred/OneDrive - Capgemini/Desktop/Assign
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign
+
+2.b Created a new branch called play
+$ git checkout -b play
+Switched to a new branch 'play'
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign (play)
+$ 
+
+3. Added file
+  touch contributers.txt
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign (play)
+
+4. Added content to the file contributers.txt using vi editor
+This is story on aeroplane.
+
+5. commit
+
+ git commit -m "airplane story"
+[play (root-commit) e8a533b] airplane story
+ 3 files changed, 2 insertions(+)
+ create mode 160000 content-git-quickstart
+ create mode 100644 contributers.txt
+ create mode 100644 story.txt
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign (play)
+
+git status
+On branch play
+nothing to commit, working tree clean
+
+ravisred@LIN83001001 MINGW64 ~/OneDrive - Capgemini/Desktop/Assign (play)
+
+
+
